@@ -7,19 +7,26 @@ const Header = () => {
 
     return (
         <header className={styles.header}>
-            <Logo className={styles.logo} />
+            <div className={styles.container}>
+                <Logo className={styles.logo} />
 
-            <a href="#" target="_blank" rel="noopener noreferrer">Catalog</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">About us</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Product selection</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Our team</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Shipping and payment</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Contacts</a>
+                <nav className={styles.nav}>
+                    <ul className={styles.links}>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Catalog</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>About us</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Product selection</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Our team</a></li>
+                        <li> <a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Shipping and payment</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Contacts</a></li>
+                    </ul>
 
-            <a href="#" target="_blank" rel="noopener noreferrer">Cart</a>
-
-            {/* cart image*/}
-            <a href="#" target="_blank" rel="noopener noreferrer"><img src="#" alt="#"></img></a>
+                    <div className={styles.cart}>
+                        <a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Cart</a>
+                        {/* cart image*/}
+                        <a href="#" target="_blank" rel="noopener noreferrer"><img src="#" alt="#" className={styles.cart__logo}></img></a>
+                    </div>
+                </nav>
+            </div>
         </header>
     )
 }

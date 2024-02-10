@@ -1,0 +1,71 @@
+.hero {
+    background-color: #484283;
+
+}
+
+.title{
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+.text{
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.button{
+    text-decoration: none;
+    color: #ffffff; 
+
+    padding: 22px 47px;
+    background-color: #F14F4F;
+    border-radius: 4px;
+
+    display: flex;
+   max-width: max-content;
+   text-align: center;
+
+}
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+    max-width: 1180px;
+
+    padding-bottom: 93px;
+}
+
+@media screen and (min-width: 480px) {
+    .container {
+        padding: 0 16px;
+        padding-bottom: 93px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 0 20px;
+        padding-bottom: 93px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .container {
+        padding: 0;
+        padding-bottom: 93px;
+    }
+
+    .title{
+        padding-top: 100px;
+    }
+
+
+    .text{
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+}

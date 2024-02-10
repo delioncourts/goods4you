@@ -1,9 +1,13 @@
 import styles from './Catalog.module.css';
+import CategoryCard from '../../entities/category-card/CategoryCard';
+import item_image from '../../shared/assets/images/catalog_item.jpg';
 
 const Catalog = () => {
 
     return(
         <section>
+
+<CategoryCard name="Nike Air Force 1 '07 QS" price="110 $" image={item_image}/>
 
         <div>
         <h2>Catalog</h2>

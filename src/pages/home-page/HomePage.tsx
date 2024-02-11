@@ -14,10 +14,11 @@ const HomePage = () => {
     return (
         <>
             <Header />
+            <main className={styles.main}>
             <Hero />
             <Catalog />
             <Team />
-
+            </main>
             {/* 
         <Catalog />
         <About />

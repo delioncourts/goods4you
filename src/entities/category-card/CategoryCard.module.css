@@ -1,0 +1,27 @@
+.image {
+    width: 100%; 
+    max-width: 280px;
+    height: 293px; 
+}
+
+.title {
+    color: #444B58;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    padding-top: 10px;
+}
+.price {
+    color: #444B58;
+    font-family: "Jost";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 3px;
+}
+
+.card {
+    max-width: 280px;
+    list-style-type: none;
+}

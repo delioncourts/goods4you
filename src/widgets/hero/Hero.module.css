@@ -1,32 +1,43 @@
 .hero {
     background-color: #484283;
-
+    background-image: url(../../shared/assets/images/hero_background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 70px;
 }
 
-.title{
+.title {
     color: #ffffff;
     padding-top: 100px;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 140%;
 }
 
-.text{
+.text {
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
 }
 
 
-.button{
+.button {
     text-decoration: none;
-    color: #ffffff; 
+    color: #ffffff;
 
     padding: 22px 47px;
     background-color: #F14F4F;
     border-radius: 4px;
 
     display: flex;
-   max-width: max-content;
-   text-align: center;
+    max-width: max-content;
+    text-align: center;
 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
 }
 
 .container {
@@ -59,12 +70,12 @@
         padding-bottom: 93px;
     }
 
-    .title{
+    .title {
         padding-top: 100px;
     }
 
 
-    .text{
+    .text {
         padding-top: 20px;
         padding-bottom: 40px;
     }

@@ -6,6 +6,8 @@ import team_mate_4 from '../../shared/assets/images/team_4.png';
 import team_mate_5 from '../../shared/assets/images/team_5.png';
 import team_mate_6 from '../../shared/assets/images/team_6.png';
 
+
+import TeamCard from '../../entities/team-card/TeamCard';
 const Team = () => {
 
     return (
@@ -13,12 +15,25 @@ const Team = () => {
             <div className={styles.container}>
             <h2 className={styles.heading}>Our team</h2>
 
-          
+         <div className={styles.team__list}>
+            <div className={styles.team__column}>
+         <TeamCard name="Alex" title="Manager" image={team_mate_1}/>
+         <TeamCard name="Alex" title="Manager" image={team_mate_2} />
+         </div>
 
-<div className={styles.image_wrap}>
-            <img className={styles.image} src={team_mate_1} alt="#" />
-<p className={styles.image_description}>Hi <br /> Hello</p>
-            </div>
+         <div  className={styles.team__column_up}>
+         <TeamCard name="Alex" title="Manager" image={team_mate_3}/>
+         <TeamCard name="Alex" title="Manager" image={team_mate_4}/>
+         </div>
+
+         <div  className={styles.team__column}>
+         <TeamCard name="Alex" title="Manager" image={team_mate_5}/>
+         <TeamCard name="Alex" title="Manager" image={team_mate_6}/>
+
+         </div>
+         </div>
+
+  
             </div>
         </section>
     )

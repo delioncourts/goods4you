@@ -1,22 +1,21 @@
 
 import styles from './CategoryCard.module.css';
-import image from '../../shared/assets/images/catalog_item.jpg';
 
 type CategoryCardProps = {
     name: string;
     price: string;
     image: string;
+    id: string | number;
 }
 
-const CategoryCard = ({name, price, image}: CategoryCardProps) => {
+const CategoryCard = ({name, price, image, id }: CategoryCardProps) => {
 
     return (
-        <div>
+        <li className={styles.card} key={id}>
             <img src={image} alt={name} className={styles.image} />
             <p className={styles.title}>{name}</p>
             <p className={styles.price}>{price}</p>
-
-        </div>
+        </li>
     )
 }
 

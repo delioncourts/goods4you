@@ -1,0 +1,25 @@
+.cart__image {
+
+    width: 21px;
+    height: 15px;
+}
+
+.content {
+    position: relative;
+}
+
+.count {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    background-color: #F14F4F;
+    border-radius: 50%;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+
+    padding: 1px 5px;
+    z-index: 10;
+}

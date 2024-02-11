@@ -1,16 +1,24 @@
 import styles from './Catalog.module.css';
 import CategoryCard from '../../entities/category-card/CategoryCard';
+import CategoryList from '../../features/CategoryList/CategoryList';
 import item_image from '../../shared/assets/images/catalog_item.jpg';
 
 const Catalog = () => {
 
     return(
-        <section>
+        <section className={styles.container}>
+ <h2 className={styles.title}>Catalog</h2>
 
-<CategoryCard name="Nike Air Force 1 '07 QS" price="110 $" image={item_image}/>
+<div className={styles.content}>
+
+<div className={styles.category__list}>
+<CategoryList />
+
+</div>
+
+</div>
 
         <div>
-        <h2>Catalog</h2>
 
         <h3>Selection by parameters</h3>
         <p>Category</p>
@@ -32,13 +40,6 @@ const Catalog = () => {
         </div>
 
 
-        <div>
-            <div>
-                <img src="#" alt="#"/>
-<p>Nike Air Force 1 '07 QS</p>
-<p>110 $ </p>
-            </div>
-        </div>
 
         </section>
     )

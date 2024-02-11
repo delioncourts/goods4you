@@ -1,0 +1,13 @@
+.heading {
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.text{
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+}

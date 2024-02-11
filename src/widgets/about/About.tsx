@@ -5,9 +5,9 @@ const About = () => {
 
     return(
         <section>
-       <h2>About us</h2>
+       <h2 className={styles.heading}>About us</h2>
 
-       <p>Every day a person has a choice what to spend his money on. Stores and websites offer an endless list of products. <br />
+       <p className={styles.text}>Every day a person has a choice what to spend his money on. Stores and websites offer an endless list of products. <br />
         But we will help you make the right choice!</p>
 
         <div className="logo with -"></div>

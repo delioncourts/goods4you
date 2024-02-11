@@ -21,6 +21,10 @@
 .link {
     color: #FFFFFF;
     text-decoration: none;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .nav {

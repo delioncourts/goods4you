@@ -1,0 +1,17 @@
+.reset {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+
+    color: #444B58;
+    font-family: 'Jost';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 23px;
+    transition: 0.3s ease-in-out;
+}
+
+.reset:hover{
+    text-decoration: underline;
+}

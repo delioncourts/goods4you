@@ -6,6 +6,12 @@
     line-height: 43px;
 }
 
+.content {
+    display: flex; 
+    gap: 20px;
+    padding-top: 33px;
+    padding-bottom: 53px;
+}
 .container {
     padding: 0 10px;
     margin: 0 auto;
@@ -18,6 +24,8 @@
 .category__list {
     display: flex; 
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 31px;
 }
 @media screen and (min-width: 480px) {

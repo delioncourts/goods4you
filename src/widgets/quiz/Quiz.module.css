@@ -1,0 +1,31 @@
+.heading{
+    color: #444B58;
+    font-family: 'Jost';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.subtitle {
+    color: #808080;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.question{
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.counter{
+    color: #808080;
+    font-family: 'Jost';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+
+}

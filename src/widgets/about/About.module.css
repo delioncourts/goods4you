@@ -1,5 +1,10 @@
+.about{
+    background-color: #484283;
+}
+
 .heading {
     font-family: 'Jost';
+    color: #FFFFFF;
     font-weight: 700;
     font-size: 30px;
     line-height: 43px;
@@ -8,6 +13,7 @@
 .text{
     font-family: 'Jost';
     font-weight: 600;
+    color: #FFFFFF;
     font-size: 16px;
     line-height: 140%;
 }

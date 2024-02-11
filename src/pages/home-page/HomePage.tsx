@@ -17,10 +17,12 @@ const HomePage = () => {
             <main className={styles.main}>
             <Hero />
             <Catalog />
+            <About />
+            <Quiz />
             <Team />
             </main>
             {/* 
-        <Catalog />
+
         <About />
         <Quiz />
         <Team />

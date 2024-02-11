@@ -4,7 +4,7 @@ import styles from './About.module.css';
 const About = () => {
 
     return(
-        <section>
+        <section className={styles.about}>
        <h2 className={styles.heading}>About us</h2>
 
        <p className={styles.text}>Every day a person has a choice what to spend his money on. Stores and websites offer an endless list of products. <br />

@@ -8,6 +8,7 @@
 .title {
     color: #ffffff;
     padding-top: 100px;
+    font-family: 'Jost';
     font-weight: 500;
     font-size: 36px;
     line-height: 140%;
@@ -17,6 +18,7 @@
     color: #ffffff;
     padding-top: 20px;
     padding-bottom: 40px;
+    font-family: 'Jost';
     font-weight: 600;
     font-size: 16px;
     line-height: 140%;
@@ -35,6 +37,7 @@
     max-width: max-content;
     text-align: center;
 
+    font-family: 'Jost';
     font-weight: 500;
     font-size: 16px;
     line-height: 23px;

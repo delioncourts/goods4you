@@ -1,6 +1,7 @@
 import styles from './Catalog.module.css';
-import CategoryCard from '../../entities/category-card/CategoryCard';
+import CategorySelection from '../../features/CategorySelection/CategorySelection';
 import CategoryList from '../../features/CategoryList/CategoryList';
+import ShowMore from '../../shared/ui/show-more/ShowMore';
 import item_image from '../../shared/assets/images/catalog_item.jpg';
 
 const Catalog = () => {
@@ -10,32 +11,18 @@ const Catalog = () => {
  <h2 className={styles.title}>Catalog</h2>
 
 <div className={styles.content}>
+    <CategorySelection />
 
 <div className={styles.category__list}>
 <CategoryList />
 
+<ShowMore link={"#catalog"} />
 </div>
 
 </div>
 
         <div>
 
-        <h3>Selection by parameters</h3>
-        <p>Category</p>
-
-        <ul>
-            <li>smartphones</li>
-            <li>laptops</li>
-            <li>sneakers</li>
-            <li>sneakers</li>
-            <li>sneakers</li>
-            <li>sneakers</li>
-            <li>sneakers</li>
-            <li>sneakers</li>
-        </ul>
-
-        <button>Apply</button>
-        <button>Reset</button>
 
         </div>
 

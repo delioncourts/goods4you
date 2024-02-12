@@ -5,6 +5,7 @@ const About = () => {
 
     return(
         <section className={styles.about}>
+            <div className={styles.container}>
        <h2 className={styles.heading}>About us</h2>
 
        <p className={styles.text}>Every day a person has a choice what to spend his money on. Stores and websites offer an endless list of products. <br />
@@ -13,6 +14,8 @@ const About = () => {
         <div className="logo with -"></div>
 
         <img src="#" alt="#" className={styles.img} />
+
+        </div>
         </section>
     )
 }

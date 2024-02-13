@@ -22,7 +22,7 @@ const Accordion = ({ elements }: TList) => {
                     <AccordionItem
                         onClick={() => (id === openId ? setId(null) : setId(id))}
                         q={faqItem.q}
-                        a={faqItem.q}
+                        a={faqItem.a}
                         isOpen={id === openId}
                         key={id} />
                 )

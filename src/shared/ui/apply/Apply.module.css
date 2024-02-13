@@ -1,4 +1,4 @@
-.apply{
+.apply {
     border: none;
     background: none;
     outline: none;
@@ -9,7 +9,7 @@
     color: #FFFFFF;
     padding-top: 16px;
     padding-bottom: 16px;
-    text-align: center; 
+    text-align: center;
     font-family: 'Jost';
     font-weight: 500;
     font-size: 16px;
@@ -17,7 +17,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.apply:hover{
+.apply:hover {
     background-color: #31343C;
 }
 

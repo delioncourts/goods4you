@@ -1,4 +1,5 @@
-.heading{
+.heading {
+    margin: 0;
     color: #444B58;
     font-family: 'Jost';
     font-weight: 700;
@@ -7,10 +8,11 @@
 }
 
 .quiz_content {
-    padding: 40px 100px;
+    padding: 10px 10px;
 }
 
 .subtitle {
+    margin: 0;
     color: #808080;
     font-family: 'Jost';
     font-weight: 600;
@@ -21,7 +23,8 @@
     border-bottom: 1px solid #808080;
 }
 
-.question{
+.question {
+    margin: 0;
     color: #444B58;
     font-family: 'Jost';
     font-weight: 600;
@@ -30,13 +33,13 @@
     padding-top: 20px;
 }
 
-.counter{
+.counter {
+    margin: 0;
     color: #808080;
     font-family: 'Jost';
     font-weight: 600;
     font-size: 16px;
     line-height: 23px;
-
 }
 
 .container {
@@ -53,12 +56,13 @@
 
 
 .bottom {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 20px; 
+    padding-top: 20px;
     border-top: 1px solid #808080;
 }
+
 @media screen and (min-width: 480px) {
     .container {
         padding: 0 16px;
@@ -66,6 +70,10 @@
 }
 
 @media screen and (min-width: 768px) {
+    .quiz_content {
+        padding: 40px 100px;
+    }
+
     .container {
         padding: 0 20px;
     }
@@ -73,6 +81,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .quiz_content {
+        padding: 40px 100px;
+    }
 
     .container {
         padding: 0;

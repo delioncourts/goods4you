@@ -1,4 +1,4 @@
-.about{
+.about {
     background-color: #484283;
     background-image: url("../../shared/assets/images/aboutus_decor.svg");
     background-repeat: no-repeat;
@@ -6,6 +6,7 @@
 }
 
 .heading {
+    margin: 0;
     font-family: 'Jost';
     color: #FFFFFF;
     font-weight: 700;
@@ -13,7 +14,8 @@
     line-height: 43px;
 }
 
-.text{
+.text {
+    margin: 0;
     font-family: 'Jost';
     font-weight: 600;
     color: #FFFFFF;
@@ -35,36 +37,50 @@
     margin: 0 auto;
     max-width: 1180px;
 
-    display: flex; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 41px;
 }
 
 .text_content {
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .cite {
-    display: flex; 
-align-self: flex-end;
+    display: flex;
+    align-self: flex-end;
 }
 
-.img{
-    max-width:680px;
-    width: 100%; 
-    max-height: 580px;
+.img {
+    max-width: 300px;
+    max-height: auto;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 480px) {
     .container {
         padding: 0 16px;
     }
+
+    .img {
+        max-width: 680px;
+        width: 100%;
+        max-height: 580px;
+        overflow-x: hidden;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .container {
         padding: 0 20px;
+        flex-direction: row;
+    }
+
+    .text_content {
+        margin-top: 0px;
     }
 
 }

@@ -17,20 +17,12 @@ const HomePage = () => {
             <main className={styles.main}>
                 <Hero />
                 <Catalog />
-            </main>
-            {/* 
-
-            <Header />
-            <main className={styles.main}>
-            <Hero />
-            <Catalog />
-            <About />
-            <Quiz />
-            <Team />
-            <FAQ />
+                <About />
+                <Quiz />
+                <Team />
+                <FAQ />
             </main>
             <Footer />
-    */}
         </>
     )
 }

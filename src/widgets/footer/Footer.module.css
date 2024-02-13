@@ -20,10 +20,21 @@
     height: 43px;
 }
 
-.links {
+/*.links {
     display: flex;
     gap: 36px;
     list-style-type: none;
+}*/
+
+.links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    justify-content: center;
 }
 
 .link {
@@ -49,6 +60,9 @@
 }
 
 @media screen and (min-width: 1440px) {
+    .links {
+        gap: 36px;
+    }
 
     .container {
         padding: 0;

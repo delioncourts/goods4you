@@ -3,17 +3,6 @@ import clsx from 'clsx';
 import styles from './AccordionItem.module.css';
 import cross from '../../shared/assets/images/faq_plus.svg';
 
-interface MyObject {
-
-    a: string;
-    q: string;
-}
-
-interface MyExactData {
-    [key: string]: MyObject;
-}
-
-
 const AccordionItem = ({ faqItem, onClick, isOpen }: any) => {
 
     return (

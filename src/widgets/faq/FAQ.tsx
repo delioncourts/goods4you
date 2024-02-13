@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Accordion from '../../features/Accordion/Accordion';
 import styles from './FAQ.module.css';
 
-const faqList: { q: string, a: string }[] = [
+const faqList = [
     {
         q: "Question 1",
         a: "Long answer to the first question"

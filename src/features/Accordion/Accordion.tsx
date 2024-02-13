@@ -2,23 +2,13 @@ import { useState } from 'react';
 import styles from './Accordion.module.css';
 import AccordionItem from '../../entities/accordion-item/AccordionItem';
 
-interface MyObject {
-
-    a: string;
-    q: string;
-}
-
-interface MyExactData {
-    [key: string]: MyObject;
-}
-
 
 const Accordion = ({ faqList }: any) => {
     const [openId, setId] = useState(null);
 
     return (
         <ul className={styles.accordion}>
-            {faqList?.map((faqItem: any, id: any) => {
+            {faqList?.map((faqItem: any, id: | null ) => {
                 return (
                 <AccordionItem 
                 onClick={() => (id === openId ? setId(null) : setId(id))}

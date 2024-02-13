@@ -42,6 +42,7 @@
 
 
 .text_name {
+    margin: 0; 
     font-family: 'Jost';
     font-weight: 700;
     font-size: 24px;
@@ -49,6 +50,7 @@
 }
 
 .text_title {
+    margin: 0;
     padding-top: 8px;
 
     font-family: 'Jost';

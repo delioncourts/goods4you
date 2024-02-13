@@ -2,7 +2,7 @@ import styles from './Catalog.module.css';
 import CategorySelection from '../../features/CategorySelection/CategorySelection';
 import CategoryList from '../../features/CategoryList/CategoryList';
 import ShowMore from '../../shared/ui/show-more/ShowMore';
-import item_image from '../../shared/assets/images/catalog_item.jpg';
+
 
 const Catalog = () => {
 

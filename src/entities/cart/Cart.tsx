@@ -1,11 +1,8 @@
-
-import { useState } from 'react';
-
 import styles from './Cart.module.css';
 import image from '../../shared/assets/images/cart.svg';
 
-const Cart = ({ }) => {
-    const [count, setCount] = useState('1');
+const Cart = () => {
+    const count = 1;
 
     return (
 

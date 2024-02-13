@@ -1,6 +1,6 @@
-import { useState } from 'react';
 import Accordion from '../../features/Accordion/Accordion';
 import styles from './FAQ.module.css';
+
 
 const faqList = [
     {
@@ -11,7 +11,6 @@ const faqList = [
         q: "Question 2",
         a: "Long answer to the second question"
     },
-
 ]
 
 const FAQ = () => {
@@ -20,12 +19,12 @@ const FAQ = () => {
         <section className={styles.faq}>
             <div className={styles.container}>
 
-       
+
                 <h2 className={styles.title}>FAQ</h2>
 
-                <Accordion faqList={faqList} />
-                </div>
-     
+                <Accordion elements={faqList} />
+            </div>
+
         </section>
     )
 }

@@ -20,11 +20,9 @@
     height: 43px;
 }
 
-/*.links {
-    display: flex;
-    gap: 36px;
-    list-style-type: none;
-}*/
+.link:hover {
+    opacity: 0.5;
+}
 
 .links {
     margin: 0;

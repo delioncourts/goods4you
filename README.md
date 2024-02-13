@@ -19,9 +19,13 @@
 
 #### `git clone https://github.com/delioncourts/goods4you.git`
 
-Запустите проект локально: 
+Запустите проект локально (development): 
 
 #### `npm run start`
+
+Запустите проект (production): 
+
+#### `npm run build`
 
 Запустить Storybook:
 

@@ -1,23 +1,22 @@
 .hero {
     background-color: #484283;
-    background-image: url(../../shared/assets/images/hero_background.png);
-    background-repeat: no-repeat;
-    background-position: center bottom 70px;
 }
 
 .title {
+    margin: 0;
     color: #ffffff;
-    padding-top: 100px;
+    padding-top: 50px;
     font-family: 'Jost';
     font-weight: 500;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 140%;
 }
 
 .text {
+    margin: 0;
     color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     font-family: 'Jost';
     font-weight: 600;
     font-size: 16px;
@@ -49,6 +48,11 @@
     max-width: 1180px;
 
     padding-bottom: 93px;
+
+    background-image: url(../../shared/assets/images/hero_background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 20px;
+    background-size: contain;
 }
 
 @media screen and (min-width: 480px) {
@@ -64,6 +68,14 @@
         padding-bottom: 93px;
     }
 
+    .title {
+        padding-top: 80px;
+    }
+
+    .text {
+        padding-bottom: 30px;
+    }
+
 }
 
 @media screen and (min-width: 1440px) {
@@ -71,15 +83,18 @@
     .container {
         padding: 0;
         padding-bottom: 93px;
+        background-position: center bottom 70px;
     }
 
     .title {
         padding-top: 100px;
+        font-size: 36px;
     }
 
 
     .text {
         padding-top: 20px;
         padding-bottom: 40px;
+        font-size: 16px;
     }
 }

@@ -75,8 +75,6 @@
         flex-direction: row;
     }
 
-    .nav {}
-
     .cart {
         gap: 37px;
     }
@@ -87,9 +85,7 @@
         padding-right: 15px;
         padding-left: 15px;
         gap: 15px;
-
     }
-
 }
 
 @media screen and (min-width: 1440px) {

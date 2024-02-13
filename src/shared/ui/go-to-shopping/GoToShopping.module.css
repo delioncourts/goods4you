@@ -2,7 +2,7 @@
     text-decoration: none;
     color: #ffffff;
 
-    padding: 22px 47px;
+    padding: 12px 23px;
     background-color: #F14F4F;
     border-radius: 4px;
 
@@ -19,4 +19,11 @@
 
 .button:hover {
     background-color: #CC4949;
+}
+
+
+@media screen and (min-width: 768px) {
+    .button {
+        padding: 22px 47px;
+    }
 }

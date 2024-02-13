@@ -6,28 +6,19 @@ import item_image from '../../shared/assets/images/catalog_item.jpg';
 
 const Catalog = () => {
 
-    return(
+    return (
         <section className={styles.container}>
- <h2 className={styles.title}>Catalog</h2>
+            <h2 className={styles.title}>Catalog</h2>
 
-<div className={styles.content}>
-    <CategorySelection />
+            <div className={styles.content}>
+                <CategorySelection />
 
-<div className={styles.category__list}>
-<CategoryList />
+                <div className={styles.category__list}>
+                    <CategoryList />
 
-<ShowMore link={"#catalog"} />
-</div>
-
-</div>
-
-        <div>
-
-
-        </div>
-
-
-
+                    <ShowMore link={"#catalog"} />
+                </div>
+            </div>
         </section>
     )
 }

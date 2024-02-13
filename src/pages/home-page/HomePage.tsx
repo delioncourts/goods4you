@@ -13,6 +13,18 @@ const HomePage = () => {
 
     return (
         <>
+         <Header />
+         <main className={styles.main}>
+         <Hero />
+            <Catalog />
+            <About />
+            <Quiz />
+            <Team />
+            <FAQ />
+            </main>
+            <Footer />
+            {/* 
+
             <Header />
             <main className={styles.main}>
             <Hero />
@@ -23,13 +35,6 @@ const HomePage = () => {
             <FAQ />
             </main>
             <Footer />
-            {/* 
-
-        <About />
-        <Quiz />
-        <Team />
-        <FAQ />
-        <Footer />
     */}
         </>
     )

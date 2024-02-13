@@ -1,17 +1,17 @@
 
 import styles from './QuizCard.module.css';
-
+import photo from '../../shared/assets/images/quiz_item.jpg';
+import Checkbox from '../../shared/ui/checkbox/Checkbox';
 type TTeamCard = {
-    name: string;
-    title: string;
-    image: string;
+    label: string;
 }
 
-const QuizCard = ({ name, title, image }: TTeamCard) => {
+const QuizCard = ({ label }: TTeamCard) => {
 
     return (
-        <article className={styles.car}>
-
+        <article className={styles.card}>
+            <img src={photo} alt="" className={styles.image} />
+            <Checkbox label={label} />
         </article>
     )
 }

@@ -1,13 +1,38 @@
 .footer {
     background-color: #444B58;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    padding-top: 21px; 
+    padding-bottom: 16px;
 }
 
 .container {
     padding: 0 10px;
     margin: 0 auto;
     max-width: 1180px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 174px; 
+    width: 100%;
+    height: 43px; 
+}
+
+.links {
+    display: flex; 
+    gap: 36px;
+    list-style-type: none;
+}
+
+.link {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 @media screen and (min-width: 480px) {

@@ -1,5 +1,8 @@
 .about{
     background-color: #484283;
+    background-image: url("../../shared/assets/images/aboutus_decor.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 .heading {
@@ -16,12 +19,41 @@
     color: #FFFFFF;
     font-size: 16px;
     line-height: 140%;
+    padding-top: 7px;
+    padding-bottom: 42px;
+}
+
+.cite {
+    max-width: 100%;
+    width: 159px;
+    height: 29px;
+
 }
 
 .container {
     padding: 0 10px;
     margin: 0 auto;
     max-width: 1180px;
+
+    display: flex; 
+    align-items: center;
+    gap: 41px;
+}
+
+.text_content {
+    display: flex; 
+    flex-direction: column; 
+}
+
+.cite {
+    display: flex; 
+align-self: flex-end;
+}
+
+.img{
+    max-width:680px;
+    width: 100%; 
+    max-height: 580px;
 }
 
 @media screen and (min-width: 480px) {

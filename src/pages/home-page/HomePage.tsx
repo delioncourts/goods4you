@@ -20,7 +20,9 @@ const HomePage = () => {
             <About />
             <Quiz />
             <Team />
+            <FAQ />
             </main>
+            <Footer />
             {/* 
 
         <About />

@@ -1,16 +1,15 @@
-import logo from '../../assets/images/logo.png';
-import styles from './Logo.module.css';
+import logo from '../../assets/images/logo.svg';
 
-type Props = {
+type TLogo = {
     className?: string;
 }
 
-const Logo: React.FC<Props> = (props) => {
+const Logo: React.FC<TLogo> = (props) => {
 
     return (
-        <>
+        <a href="/mainpage" target="_blank" rel="noopener noreferrer">
             <img {...props} src={logo} alt="white logo Goods4you" />
-        </>
+        </a>
     )
 }
 

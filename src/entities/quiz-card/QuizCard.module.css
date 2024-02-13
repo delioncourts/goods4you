@@ -3,3 +3,10 @@
     flex-direction: column;
     gap:10px;
 }
+
+.image {
+    border-radius: 4px;
+    width: 100%; 
+    max-width: 280px; 
+    max-height: 120px;
+}

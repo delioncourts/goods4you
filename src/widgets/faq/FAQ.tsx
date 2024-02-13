@@ -1,18 +1,31 @@
+import { useState } from 'react';
+import Accordion from '../../features/Accordion/Accordion';
 import styles from './FAQ.module.css';
+
+const faqList: { q: string, a: string }[] = [
+    {
+        q: "Question 1",
+        a: "Long answer to the first question"
+    },
+    {
+        q: "Question 2",
+        a: "Long answer to the second question"
+    },
+
+]
 
 const FAQ = () => {
 
-    return(
+    return (
         <section className={styles.faq}>
             <div className={styles.container}>
-        <h2>FAQ</h2>
 
-        <p>Question 1</p>
-        <p>Long answer to the first question</p>
+       
+                <h2 className={styles.title}>FAQ</h2>
 
-        <p>Question 2</p>
-        <p>Long answer to the second question</p>
-        </div>
+                <Accordion faqList={faqList} />
+                </div>
+     
         </section>
     )
 }

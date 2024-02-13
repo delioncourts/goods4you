@@ -7,8 +7,8 @@
     background-color: #444B58;
     border-radius: 4px;
     color: #FFFFFF;
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     text-align: center; 
     font-family: 'Jost';
     font-weight: 500;
@@ -19,4 +19,11 @@
 
 .apply:hover{
     background-color: #31343C;
+}
+
+@media screen and (min-width: 768px) {
+    .button {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
 }

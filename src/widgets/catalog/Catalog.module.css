@@ -1,5 +1,5 @@
-.title{
-    margin: 0; 
+.title {
+    margin: 0;
     color: #444B58;
     font-family: "Jost";
     font-weight: 700;
@@ -8,7 +8,7 @@
 }
 
 .content {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     gap: 20px;
     padding-top: 33px;
@@ -25,12 +25,13 @@
 
 
 .category__list {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 31px;
 }
+
 @media screen and (min-width: 480px) {
     .container {
         padding: 0 16px;
@@ -43,7 +44,7 @@
     }
 
     .content {
-        display: flex; 
+        display: flex;
         flex-direction: row;
         gap: 20px;
         padding-top: 33px;

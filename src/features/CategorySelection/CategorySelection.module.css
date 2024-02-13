@@ -1,16 +1,16 @@
 .selection {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     height: 100%;
     background-color: #FFF4EE;
     border-radius: 4px;
 
     padding: 9px 20px 20px 20px;
-    max-width: 280px; 
-    width: 100%;
+    max-width: 280px;
 }
 
 .title {
+    margin: 0;
     font-family: 'Jost';
     color: #444B58;
     font-weight: 600;
@@ -18,7 +18,8 @@
     line-height: 35px;
 }
 
-.text{
+.text {
+    margin: 0;
     font-family: 'Jost';
     color: #444B58;
     font-weight: 600;
@@ -29,9 +30,11 @@
     padding-bottom: 3px;
 }
 
-.category__list{
-    padding: 0; 
-    display:grid;
+.category__list {
+    margin: 0;
+    padding: 0;
+    margin-top: 3px;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 32px;
 }
@@ -52,7 +55,7 @@
     line-height: 23px;
     border: 1px solid #DBBBA9;
 
-    
+
     text-align: center;
     padding-top: 28px;
     padding-bottom: 24px;
@@ -61,12 +64,61 @@
 }
 
 
-.reset{
+.reset {
     margin-top: 30px;
 }
 
 .buttons {
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    gap: 35px;
+    gap: 20px;
+}
+
+
+@media screen and (min-width: 480px) {
+    .selection {
+        max-width: 400px;
+    }
+
+    .category__list {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 32px;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+    .selection {
+        max-width: 280px;
+    }
+
+    .category__list {
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 32px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .selection {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        background-color: #FFF4EE;
+        border-radius: 4px;
+
+        padding: 9px 20px 20px 20px;
+        max-width: 280px;
+        width: 100%;
+    }
+
 }

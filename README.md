@@ -17,10 +17,15 @@
 
 Клонируйте репозиторий (например, по https):
 
-### `git clone https://github.com/delioncourts/goods4you.git`
+#### `git clone https://github.com/delioncourts/goods4you.git`
 
 Запустите проект локально: 
 
-### `npm run start`
+#### `npm run start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Запустить Storybook:
+
+
+## Деплой 
+
+Также сайт можно посмотреть на vercel [https://goods4you.vercel.app/](https://goods4you.vercel.app/).

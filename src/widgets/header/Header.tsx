@@ -1,7 +1,9 @@
 import styles from './Header.module.css';
 
 import Logo from '../../shared/ui/logo/Logo';
-import Cart from '../../entities/cart/Cart';
+
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
 
@@ -12,18 +14,48 @@ const Header = () => {
 
                 <nav className={styles.nav}>
                     <ul className={styles.links}>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Catalog</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>About us</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Product selection</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Our team</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Shipping and payment</a></li>
-                        <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Contacts</a></li>
-                    </ul>
 
-                    <div className={styles.cart}>
-                        <a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Cart</a>
-                        <Cart />
-                    </div>
+                        <li>
+                            <button
+                                className={styles.link}
+                                onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}>
+                                Catalog
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                className={styles.link}
+                                onClick={() => document.getElementById('aboutus')?.scrollIntoView({ behavior: 'smooth' })}>
+                                About us
+                            </button>
+                        </li>
+
+                        <li>
+                            <button
+                                className={styles.link}
+                                onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}>
+                                Product selection
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                className={styles.link}
+                                onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}>
+                                Our team
+                            </button>
+                        </li>
+                        <li>
+                            <button
+                                className={styles.link}
+                                onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })}>
+                                FAQ
+                            </button>
+                        </li>
+                        <li>
+                            <Link to='/search' className={styles.link}>For staff</Link>
+                        </li>
+
+                    </ul>
                 </nav>
             </div>
         </header>

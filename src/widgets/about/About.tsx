@@ -5,7 +5,7 @@ import cite from '../../shared/assets/images/cite.svg';
 const About = () => {
 
     return (
-        <section className={styles.about}>
+        <section className={styles.about} id='aboutus'>
             <div className={styles.container}>
                 <div className={styles.text_content}>
                     <h2 className={styles.heading}>About us</h2>

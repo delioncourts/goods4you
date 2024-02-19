@@ -8,15 +8,45 @@ const Footer = () => {
 
             <div className={styles.container}>
 
-                <Logo className={styles.logo}/>
+                <Logo className={styles.logo} />
 
                 <ul className={styles.links}>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Catalog</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>About us</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Product selection</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Our team</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Shipping and payment</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" className={styles.link}>Contacts</a></li>
+                    <li>
+                        <button
+                            className={styles.link}
+                            onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}>
+                            Catalog
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={styles.link}
+                            onClick={() => document.getElementById('aboutus')?.scrollIntoView({ behavior: 'smooth' })}>
+                            About us
+                        </button>
+                    </li>
+
+                    <li>
+                        <button
+                            className={styles.link}
+                            onClick={() => document.getElementById('products')?.scrollIntoView({ behavior: 'smooth' })}>
+                            Product selection
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={styles.link}
+                            onClick={() => document.getElementById('team')?.scrollIntoView({ behavior: 'smooth' })}>
+                            Our team
+                        </button>
+                    </li>
+                    <li>
+                        <button
+                            className={styles.link}
+                            onClick={() => document.getElementById('faq')?.scrollIntoView({ behavior: 'smooth' })}>
+                            FAQ
+                        </button>
+                    </li>
                 </ul>
 
             </div>

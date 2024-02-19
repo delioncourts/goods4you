@@ -11,7 +11,7 @@ import TeamCard from '../../entities/team-card/TeamCard';
 const Team = () => {
 
     return (
-        <section className={styles.team}>
+        <section className={styles.team} id='team'>
             <div className={styles.container}>
                 <h2 className={styles.heading}>Our team</h2>
 

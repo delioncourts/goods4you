@@ -7,7 +7,7 @@ import ShowMore from '../../shared/ui/show-more/ShowMore';
 const Catalog = () => {
 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id='catalog'>
             <h2 className={styles.title}>Catalog</h2>
 
             <div className={styles.content}>

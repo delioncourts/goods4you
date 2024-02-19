@@ -5,7 +5,7 @@ import styles from './Quiz.module.css';
 const Quiz = () => {
 
     return (
-        <section className={styles.quiz}>
+        <section className={styles.quiz} id='products'>
 
             <div className={styles.container}>
 

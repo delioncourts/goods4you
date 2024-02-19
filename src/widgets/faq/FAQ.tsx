@@ -16,7 +16,7 @@ const faqList = [
 const FAQ = () => {
 
     return (
-        <section className={styles.faq}>
+        <section className={styles.faq} id="faq">
             <div className={styles.container}>
 
 

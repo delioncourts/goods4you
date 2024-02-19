@@ -1,8 +1,17 @@
+import { useState, useEffect } from 'react';
 import Reset from '../../shared/ui/reset/Reset';
 import Apply from '../../shared/ui/apply/Apply';
 import styles from './CategorySelection.module.css';
+import { PRODUCTS_CATEGORIES_URL } from './api/const';
 
 const CategorySelection = () => {
+    const [products, setProducts] = useState<string[]>([]);
+
+    useEffect(() => {
+        fetch(PRODUCTS_CATEGORIES_URL)
+            .then((res) => res.json())
+            .then((data) => setProducts(data));
+    }, []);
 
     return (
         <div className={styles.selection}>
@@ -13,19 +22,14 @@ const CategorySelection = () => {
             <form action="" method="get" className={styles.form}>
 
                 <ul className={styles.category__list}>
-                    <li className={styles.category__item}>smartphones</li>
-                    <li className={styles.category__item}>laptops</li>
-                    <li className={styles.category__item}>sneakers</li>
-                    <li className={styles.category__item}>sneakers</li>
-                    <li className={styles.category__item}>sneakers</li>
-                    <li className={styles.category__item}>sneakers</li>
-                    <li className={styles.category__item}>sneakers</li>
-                    <li className={styles.category__item}>sneakers</li>
+                    {products.map((item, index) => (
+                        <li className={styles.category__item} key={index} value={item}>{item}</li>
+                    ))}
                 </ul>
 
                 <div className={styles.buttons}>
-                <Apply />
-                <Reset />
+                    <Apply />
+                    <Reset />
                 </div>
             </form>
 

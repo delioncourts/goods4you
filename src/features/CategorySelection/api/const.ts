@@ -1,0 +1,1 @@
+export const PRODUCTS_CATEGORIES_URL = "https://dummyjson.com/products/categories";

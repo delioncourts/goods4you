@@ -20,7 +20,7 @@ const Product = () => {
     return (
         <section className={styles.container}>
             {data.length > 0 ? data.map((element, index) => {
-                return <ProductCard card={element} key={index}/>
+                return <ProductCard card={element} key={index} />
             }) : <div>Product loading... </div>}
         </section>
     )

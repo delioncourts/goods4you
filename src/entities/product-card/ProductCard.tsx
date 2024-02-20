@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import styles from './ProductCard.module.css';
 import star from '../../shared/assets/images/star.svg';
+import React from "react";
 
 type Card = {
     id: number;
@@ -23,7 +24,7 @@ interface ProductCard {
 const ProductCard: React.FC<ProductCard> = ({ card }) => {
     const { brand, id, images, rating, price, discountPercentage, stock, category, description } = card;
 
-    //вычисляем скидку в деньгах
+    //вычисляем размер скидки в деньгах
     let sumDiscount = (discountPercentage * 100) / price;
     //вычисляем сумму со скидкой, округляем до двух знаков после точки
     let totalPriceWDiscount = (price - sumDiscount).toFixed(2);

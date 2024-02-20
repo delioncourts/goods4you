@@ -4,9 +4,9 @@ type TShowMore = {
     link: string;
 }
 
-const ShowMore = ({ link }: TShowMore) => {
+const ShowMore = () => {
     return (
-        <a href={link} target="_blank" rel="noopener noreferrer" className={styles.button}>Show more</a>
+        <button type="button" className={styles.button}> Show more</button>
     );
 };
 

@@ -19,6 +19,23 @@
 
     margin-top: 60px;
     margin-bottom: 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 50px;
+}
+
+.heading {
+    margin: 0;
+    padding: 0;
+    color: #444B58;
+    font-family: "Jost";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+
 }
 
 .form {
@@ -76,7 +93,6 @@
     column-gap: 10px;
     row-gap: 5px;
 
-    padding-top: 50px; 
     max-width: 1180px;
     width: 100%;
 }

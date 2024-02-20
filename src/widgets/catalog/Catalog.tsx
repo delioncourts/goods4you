@@ -16,7 +16,7 @@ const Catalog = () => {
                 <div className={styles.category__list}>
                     <CategoryList />
 
-                    <ShowMore link={"#catalog"} />
+                    <ShowMore />
                 </div>
             </div>
         </section>

@@ -1,4 +1,10 @@
 .button {
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+
     text-decoration: none;
     color: #ffffff;
 
@@ -9,6 +15,7 @@
     display: flex;
     max-width: max-content;
     text-align: center;
+    align-self: center;
 
     font-family: 'Jost';
     font-weight: 500;

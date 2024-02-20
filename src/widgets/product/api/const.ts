@@ -1,0 +1,1 @@
+export const SINGLE_PRODUCT_URL = 'https://dummyjson.com/products/1';

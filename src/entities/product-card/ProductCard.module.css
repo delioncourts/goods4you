@@ -1,0 +1,58 @@
+.heading{
+    margin: 0;
+    color: #444B58;
+    font-family: "Jost";
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.content{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 42px;
+    padding-top: 55px;
+}
+
+.title_container{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.description_content {
+    display: flex; 
+    flex-direction: column;
+    gap: 48px;
+}
+
+.title {
+    margin: 0; 
+    padding: 0; 
+    color: #444B58;
+
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.category_name{
+    margin: 0; 
+    padding: 0; 
+    color: #B2B5BB;
+
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.category_description{
+    color: #444B58;
+}
+
+.categories_container{
+    display: flex; 
+    flex-direction: column;
+    gap: 24px;
+}

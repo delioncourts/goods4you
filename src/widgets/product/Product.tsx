@@ -5,23 +5,26 @@ import ProductCard from '../../entities/product-card/ProductCard';
 import styles from './Product.module.css';
 
 const Product = () => {
-    let [data, setData] = useState<string[]>([])
+    const [data, setData] = useState<string[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         async function fetchData() {
             let response = await fetch(SINGLE_PRODUCT_URL)
             let responseJson = await response.json();
             setData([responseJson]);
-            console.log(responseJson);
+            setLoading(false);
         }
         fetchData();
     }, []);
 
     return (
         <section className={styles.container}>
-            {data.length > 0 ? data.map((element, index) => {
-                return <ProductCard card={element} key={index} />
-            }) : <div>Product loading... </div>}
+            {loading ? <p>Product is loading, please wait</p> :
+                data.map((element, index) => {
+                    return <ProductCard card={element} key={index} />
+                })
+            }
         </section>
     )
 }

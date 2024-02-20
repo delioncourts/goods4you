@@ -5,10 +5,10 @@ import styles from './ProductPage.module.css';
 const ProductPage = () => {
 
     return (
-        <section className={styles.component}>
+        <>
             <HeaderSecondary />
             <Product />
-        </section>
+        </>
     )
 }
 

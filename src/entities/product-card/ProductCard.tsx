@@ -2,7 +2,7 @@ import { FC } from 'react';
 import styles from './ProductCard.module.css';
 import star from '../../shared/assets/images/star.svg';
 
-type TCard = {
+type Card = {
     id: number;
     title: string;
     description: string;
@@ -14,13 +14,13 @@ type TCard = {
     category: string;
     thumbnail: string;
     images: string[];
-
-}
-interface IProductCard {
-    card: TCard | any;
 }
 
-const ProductCard: React.FC<IProductCard> = ({ card }) => {
+interface ProductCard {
+    card: Card | any;
+}
+
+const ProductCard: React.FC<ProductCard> = ({ card }) => {
     const { brand, id, images, rating, price, discountPercentage, stock, category, description } = card;
 
     //вычисляем скидку в деньгах

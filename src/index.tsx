@@ -23,7 +23,6 @@ export const useDispatch = () => dispatchHook<AppDispatch>();
 export const useSelector: TypedUseSelectorHook<RootState> = selectorHook;
 
 export type TAppActions = TGetQuizActions;
-
 export type AppThunk<ReturnType = void> = ThunkAction<ReturnType, RootState, unknown, TAppActions>;
 
 

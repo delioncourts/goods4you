@@ -1,8 +1,18 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import styles from './SearchForm.module.css';
+import { SEARCH_AND_SKIP_URL } from './api/const';
+import SearchCard from "../../entities/search-card/SearchCard";
 
 const SearchForm = () => {
     const [request, setRequest] = useState('');
+    const [products, setProducts] = useState<string[]>([]);
+
+    fetch(SEARCH_AND_SKIP_URL)
+        .then((res) => res.json())
+        .then((data) => {
+            data && data.products
+            setProducts(data.products);
+        })
 
     return (
         <section className={styles.container}>
@@ -23,6 +33,15 @@ const SearchForm = () => {
             </form>
 
 
+            <div className={styles.list}>
+                {products.length > 0
+                    ? products.map((product) => (
+                            <SearchCard card={product} />
+                        )) : (
+                        <p>Products is loading</p>
+                    )}
+
+            </div>
         </section>
     )
 }

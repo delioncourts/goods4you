@@ -1,0 +1,1 @@
+export const SEARCH_AND_SKIP_URL = 'https://dummyjson.com/products?limit=9&skip=10&select=title,price';

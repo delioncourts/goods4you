@@ -1,0 +1,45 @@
+.image {
+    width: 100%;
+    max-width: 380px;
+    max-height: 293px;
+}
+
+.title {
+    margin: 0; 
+    color: #444B58;
+    font-family: "Jost";
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 10px;
+}
+
+.price {
+    margin: 0; 
+    color: #444B58;
+    font-family: "Jost";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    padding-top: 3px;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        font-size: 16px;
+        line-height: 23px;
+    }
+    
+    .price {
+        font-size: 20px;
+        line-height: 29px;
+    }
+    
+
+}

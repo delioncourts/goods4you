@@ -4,6 +4,7 @@ import styles from './NextStep.module.css';
 type TApply = {
     className?: string;
     ariaLabel?: string;
+    label?: string;
 }
 
 const NextStep: React.FC<TApply> = (props) => {

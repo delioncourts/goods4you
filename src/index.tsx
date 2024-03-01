@@ -6,7 +6,7 @@ import { Provider, TypedUseSelectorHook } from "react-redux";
 import { configureStore, ThunkAction, ThunkDispatch } from '@reduxjs/toolkit'
 import { useDispatch as dispatchHook, useSelector as selectorHook } from 'react-redux';
 
-import { rootReducer } from './app/api/reducers/rootreducer';
+import { rootReducer } from './app/api/reducers/rootReducer';
 
 import { TGetQuizActions } from './features/QuizList/api/actions/actions';
 import './index.css';

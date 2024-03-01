@@ -14,7 +14,7 @@ type TIngredientState = {
   quizError: boolean;
 }
 
-const initialState: TIngredientState = {
+export const initialState: TIngredientState = {
   quiz: [],
   quizRequest: false,
   quizError: false,

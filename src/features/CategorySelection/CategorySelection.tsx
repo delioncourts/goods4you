@@ -28,7 +28,7 @@ const CategorySelection = () => {
                 </ul>
 
                 <div className={styles.buttons}>
-                    <Apply />
+                    <Apply/>
                     <Reset />
                 </div>
             </form>

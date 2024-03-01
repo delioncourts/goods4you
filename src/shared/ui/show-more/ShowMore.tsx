@@ -6,7 +6,7 @@ type TShowMore = {
 
 const ShowMore = () => {
     return (
-        <button type="button" className={styles.button}> Show more</button>
+        <button type="button" className={styles.button}>Show more</button>
     );
 };
 

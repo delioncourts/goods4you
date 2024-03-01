@@ -37,10 +37,12 @@
 
 #### `npm run storybook`
 
+Запуск тестов: 
+
+#### `npm run test`
+
 ## Деплой 
 
 Также сайт можно посмотреть на Vercel:
 
-Первый этап: [https://goods4you.vercel.app/](https://goods4you.vercel.app/)
-
-Второй этап (доступ по ссылке): [https://goods4you-git-step-2-delioncourts-projects.vercel.app?_vercel_share=ma195w2er7J6ifGYWbcM9OJBaX7Xzhyr](https://goods4you-git-step-2-delioncourts-projects.vercel.app?_vercel_share=ma195w2er7J6ifGYWbcM9OJBaX7Xzhyr)
+Первый и второй этап: [https://goods4you.vercel.app/](https://goods4you.vercel.app/)

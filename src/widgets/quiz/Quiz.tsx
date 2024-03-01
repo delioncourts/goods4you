@@ -21,7 +21,7 @@ const Quiz = () => {
 
                     <div className={styles.bottom}>
                         <p className={styles.counter}>1 of 3</p>
-                        <NextStep />
+                        <NextStep label="next"/>
 
                     </div>
                 </div>

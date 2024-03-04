@@ -12,6 +12,7 @@ import { TGetQuizActions } from './features/QuizList/api/actions/actions';
 import './index.css';
 import App from '../src/app/App';
 
+
 const store = configureStore({
   reducer: rootReducer
 })
